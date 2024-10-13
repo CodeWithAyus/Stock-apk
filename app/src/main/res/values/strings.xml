@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Stock Calculator</string>
+    <string name="welcome">WelCome Users</string>
+    <string name="hint">Select Stock</string>
+    <string name="sub">SUBMIT</string>
+
+</resources>
