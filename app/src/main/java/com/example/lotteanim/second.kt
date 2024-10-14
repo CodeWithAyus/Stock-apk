@@ -22,7 +22,7 @@ class second : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        stockTextView = findViewById(R.id.stockTextView) // Make sure to have this TextView in your layout
+        stockTextView = findViewById(R.id.stockTextView)
         submitBtn = findViewById(R.id.submitBtn)
 
         submitBtn.setOnClickListener {
@@ -43,7 +43,7 @@ class second : AppCompatActivity() {
                         stockTextView.text = "Stock Data: $it"
                     }
                 } else {
-                    stockTextView.text = "Error: ${response.errorBody()?.string()}"
+                    "Error: ${response.errorBody()?.string()}".also { this@second.stockTextView.text = it }
                 }
             }
 
